@@ -5,11 +5,23 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ProdDetalhiComponent } from './prod-detalhi/prod-detalhi.component';
+import { FinalizarComponent } from './finalizar/finalizar.component';
+import { ContatoComponent } from './contato/contato.component';
+import { ServiceComponent } from './service/service.component';
+import { LoginComponent } from './login/login.component';
+import { AcountComponent } from './acount/acount.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+   {
+    path: 'log',
+    component: LoginComponent,
+  },   {
+    path: 'aco',
+    component: AcountComponent,
   },
   {
     path: 'p',
@@ -22,6 +34,18 @@ const routes: Routes = [
   {
     path: 'detail',
     component: ProdDetalhiComponent,
+  },
+  {
+    path: 'fin',
+    component: FinalizarComponent,
+  },
+  {
+    path: 'con',
+    component: ContatoComponent,
+  },
+  {
+    path: 'serv',
+    component: ServiceComponent,
   },
 ];
 

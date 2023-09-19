@@ -74,9 +74,9 @@
   </div>
 </header>
 <main class="pb-12">
-  <div class="m-auto max-w-[1170px] flex">
-    <section class="w-[400px] flex flex-col gap-12">
-      <div class="w-full h-fit bg-white shadow-md">
+  <div class="m-auto max-w-[1170px]  flex">
+    <section class="w-[400px] flex flex-col gap-12 max-[900px]:hidden">
+      <div class="w-full h-fit bg-white shadow-md ">
         <a
           href="#"
           class="w-full py-3 group cursor-pointer flex items-center gap-3 border-b border-gray-400/30 px-3"
@@ -301,11 +301,16 @@
       </div>
     </section>
 
+    
+
     <section class="w-full">
       <div class="mt-7 w-full px-5">
-        <div class="flex items-center justify-between">
-          <h3 class="font-extralight">MACBOOK</h3>
-          <form>
+        <div class="flex max-[900px]:items-start min-[900px]:items-center min-[900px]:justify-between max-[900px]:flex-col">
+          <div class="flex items-center justify-center gap-1 max-[900px]:text-xs">
+            <span>COMPUTADORES / </span>
+            <h3 class="font-extralight">MACBOOK</h3>
+          </div>
+          <form class="max-[900px]:mt-3 max-[900px]:float-right self-end">
             <select name="" id="" class="w-72 p-1 ring-blue-500/30 rounded-sm outline-none  focus:ring-1  border px-2  bg-white">
               <option value="" class="text-red-400">
                 <span>Preço: o mais caro primeiro</span>
@@ -313,8 +318,116 @@
             </select>
           </form>
         </div>
-        <div class="row mt-4">
-          <div class="col-md-4 ">
+        <div class="row mt-4 max-[900px]:m-2">
+          <div class="col-md-4  col-lg-3 col-sm-6 mb-3 ">
+            <div class="w-full group shadow-sm p-2 relative">
+              <div
+                class=" w-full rounded-sm transition-all overflow-hidden  cursor-pointer"
+              >
+                <img
+                  class="h-fit w-full"
+                  alt="100%x280"
+                  src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+                />
+                <div
+                  class="absolute gap-3 hidden bottom-0 inset-0 backdrop-blur-sm  group-hover:flex items-center justify-center  text-white"
+                >
+                  <a
+                    href=""
+                    class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
+                    ><i class="bi bi-ticket-detailed font-extrabold"></i>
+                    Detalhes
+                  </a>
+                  <a
+                    href=""
+                    class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
+                    >+ <i class="bi bi-cart3 font-extrabold"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="text-center py-3">
+                <h4 class="text-blue-800">Dipirona</h4>
+                <span class="text-xs text-alabaster-800"
+                  >Acessórios informáticos</span
+                >
+                <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4  col-lg-3 col-sm-6 mb-3 ">
+            <div class="w-full group shadow-sm p-2 relative">
+              <div
+                class=" w-full rounded-sm transition-all overflow-hidden  cursor-pointer"
+              >
+                <img
+                  class="h-fit w-full"
+                  alt="100%x280"
+                  src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+                />
+                <div
+                  class="absolute gap-3 hidden bottom-0 inset-0 backdrop-blur-sm  group-hover:flex items-center justify-center  text-white"
+                >
+                  <a
+                    href=""
+                    class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
+                    ><i class="bi bi-ticket-detailed font-extrabold"></i>
+                    Detalhes
+                  </a>
+                  <a
+                    href=""
+                    class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
+                    >+ <i class="bi bi-cart3 font-extrabold"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="text-center py-3">
+                <h4 class="text-blue-800">Dipirona</h4>
+                <span class="text-xs text-alabaster-800"
+                  >Acessórios informáticos</span
+                >
+                <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4  col-lg-3 col-sm-6 mb-3 ">
+            <div class="w-full group shadow-sm p-2 relative">
+              <div
+                class=" w-full rounded-sm transition-all overflow-hidden  cursor-pointer"
+              >
+                <img
+                  class="h-fit w-full"
+                  alt="100%x280"
+                  src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
+                />
+                <div
+                  class="absolute gap-3 hidden bottom-0 inset-0 backdrop-blur-sm  group-hover:flex items-center justify-center  text-white"
+                >
+                  <a
+                    href=""
+                    class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
+                    ><i class="bi bi-ticket-detailed font-extrabold"></i>
+                    Detalhes
+                  </a>
+                  <a
+                    href=""
+                    class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
+                    >+ <i class="bi bi-cart3 font-extrabold"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="text-center py-3">
+                <h4 class="text-blue-800">Dipirona</h4>
+                <span class="text-xs text-alabaster-800"
+                  >Acessórios informáticos</span
+                >
+                <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4  col-lg-3 col-sm-6 mb-3 ">
             <div class="w-full group shadow-sm p-2 relative">
               <div
                 class=" w-full rounded-sm transition-all overflow-hidden  cursor-pointer"

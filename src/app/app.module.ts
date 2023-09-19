@@ -7,6 +7,11 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ProdDetalhiComponent } from './prod-detalhi/prod-detalhi.component';
+import { FinalizarComponent } from './finalizar/finalizar.component';
+import { ContatoComponent } from './contato/contato.component';
+import { ServiceComponent } from './service/service.component';
+import { LoginComponent } from './login/login.component';
+import { AcountComponent } from './acount/acount.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { ProdDetalhiComponent } from './prod-detalhi/prod-detalhi.component';
     ProdutosComponent,
     HomeComponent,
     CartComponent,
-    ProdDetalhiComponent
+    ProdDetalhiComponent,
+    FinalizarComponent,
+    ContatoComponent,
+    ServiceComponent,
+    LoginComponent,
+    AcountComponent
   ],
   imports: [
     BrowserModule,

@@ -1,45 +1,46 @@
 <header class="">
-  <div class="bg-green-600">
-    <div class="m-auto max-w-[1170px] py-2 flex items-center justify-between ">
-      <div class="flex items-center gap-3 text-[0.850rem] font-extralight">
-        <span class="text-alabaster-400 font-extralight">+244 944 145 409</span>
-        <span class="text-alabaster-400">geral@ndca.com</span>
+  <div class="bg-green-600  max-[1024px]:px-8">
+    <div class="m-auto max-w-[1170px] py-2 flex items-center justify-between">
+      <div class="flex items-center justify-center gap-3 text-[0.850rem] font-extralight max-[1024px]:text-sm ">
+        <span class="text-white cursor-pointer  max-[900px]:text-xs">+244 944 145 409</span>
+        <span class="text-white cursor-pointer max-[900px]:text-xs">geral@ndca.com</span>
       </div>
-      <div class="flex items-center gap-3 font-extralight  text-[0.850rem]">
-        <span class="text-alabaster-400 font-extralight">+244 944 145 409</span>
-        <span class="text-alabaster-400">geral@ndca.com</span>
+      <div class="flex items-center gap-3 font-extralight text-[0.850rem]">
+        <a class="text-white cursor-pointer font-extralight"><i class="bi bi-facebook"></i></a>
+        <a class="text-white cursor-pointer"><i class="bi bi-whatsapp"></i></a>
+        <a class="text-white cursor-pointer"><i class="bi bi-linkedin"></i></a>
+        <a class="text-white cursor-pointer"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </div>
 
   <nav class="bg-white border-b">
-    <div
-      class="m-auto max-w-[1170px] py-1 flex items-center justify-between uppercase"
-    >
+    <div class="m-auto max-w-[1170px] max-[1024px]:px-8 py-1 flex items-center justify-between uppercase">
       <div class="flex items-center gap-3">
-        <img
-          class="w-24"
-          src="https://ndca-online-demo.netlify.app/assets/images/logondca/logotiporectang.png"
-          alt=""
-        />
-        <a>Inicio</a>
-        <a>Protutos</a>
-        <a>Carrinho</a>
-        <a>Sobre</a>
+        <img class="w-24" src="https://ndca-online-demo.netlify.app/assets/images/logondca/logotiporectang.png"
+          alt="" />
+        <ul class="max-[1024px]:text-sm max-[900px]:text-xs max-[900px]:hidden flex items-center gap-3">
+          <a href="#" class="hover:text-blue-500 transition-all">Inicio</a>
+          <a href="#" class="hover:text-blue-500 transition-all">Protutos</a>
+          <a href="#" class="hover:text-blue-500 transition-all">Carrinho</a>
+          <a href="#" class="hover:text-blue-500 transition-all">Sobre</a>
+        </ul>
+
       </div>
-      <div class="flex gap-3">
-        <a>Login</a>
-        <a>Conta</a>
+      <div class="flex gap-3 max-[1024px]:text-sm max-[900px]:hidden">
+        <a href="#" class="hover:text-blue-500 transition-all">Login</a>
+        <a href="#" class="hover:text-blue-500 transition-all">Conta</a>
       </div>
+      <button class="min-[900px]:hidden m-2 w-12 py-1 focus:border border-gray-90 hover:bg-gray-300"  id="AsiderButton">
+        <i id="AsiderButtonICon" class="bi  bi-list text-black text-2xl  font-extrabold"></i>
+      </button>
     </div>
   </nav>
   <div class="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900">
     <div
-      class="m-auto max-w-[1170px] relative py-2 gap-3 flex items-center justify-between uppercase"
-    >
+      class="m-auto max-w-[1170px] max-[1024px]:px-8 relative py-2 gap-3 flex items-center justify-between uppercase ">
       <div
-        class="w-[300px] flex items-center gap-3 h-full absolute border-b-4 border-white p-2 from-blue-700 bg-gradient-to-r via-blue-700 to-blue-900"
-      >
+        class="w-[300px] flex items-center gap-3 h-full absolute border-b-4 border-white p-2 max-[900px]:hidden from-blue-700 bg-gradient-to-r via-blue-700 to-blue-900">
         <i class="bi bi-list text-2xl text-white font-semibold"></i>
         <span class="flex items-center text-white text-sm font-semibold">
           Categoria de produtos
@@ -47,24 +48,22 @@
         <i class="bi bi-chevron-down text-white/40"></i>
       </div>
 
-      <div class="flex w-full ml-80 items-end gap-3">
+      <div class="flex w-full min-[900px]:ml-80 items-end gap-3">
         <form class="w-full flex items-end relative justify-end">
-          <i
-            class="bi bi-search absolute bottom-1 right-3 text-alabaster-600/50"
-          ></i>
+          <i class="bi bi-search absolute bottom-1 right-3 text-alabaster-600/50"></i>
           <input
-            class="w-4/5 rounded-sm border-[0.0599rem] border-alabaster-600/40 py-1 pl-3 pr-9 outline-0 bg-transparent"
-            type="text"
-            name=""
-            id=""
-            placeholder="O que precuras ?"
-          />
+            class="w-4/5 max-[900px]:w-full rounded-sm border-[0.0599rem] border-alabaster-600/40 py-1 pl-3 pr-9 outline-0 bg-transparent"
+            type="text" name="" id="" placeholder="O que precuras ?" />
         </form>
 
-        <button
-          class="flex items-center text-white rounded border-0 bg-green-700"
-        >
+        <button class="flex items-center transition-all hover:brightness-90 text-white  max-[900px]:hidden rounded border-0 bg-green-700">
           <span class="py-1 px-3">Carrinho</span>
+          <span class="py-1 px-3 bg-green-500/30"> 1 </span>
+          <span class="py-1 px-3 bg-green-600 rounded-r-md">
+            <i class="bi bi-cart3"></i>
+          </span>
+        </button>
+        <button class="flex items-center transition-all hover:brightness-90 text-white rounded border-0  min-[900px]:hidden bg-green-700">
           <span class="py-1 px-3 bg-green-500/30"> 1 </span>
           <span class="py-1 px-3 bg-green-600 rounded-r-md">
             <i class="bi bi-cart3"></i>
@@ -74,11 +73,9 @@
     </div>
   </div>
 
-  <div class="m-auto max-w-[1170px] flex">
-    <div class="w-[400.7px] bg-blue-700">
-      <a
-        class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2"
-      >
+  <div class="m-auto max-w-[1170px] max-[1024px]:px-8 flex max-[900px]:px-0">
+    <div class="w-[400.7px] max-[900px]:hidden bg-blue-700">
+      <a class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-laptop text-white text-2xl"></i>
         <span class="flex items-center text-white text-xs font-semibold">
           Acessórios e Informática
@@ -87,9 +84,7 @@
               akmmakfkac
             </ul> -->
       </a>
-      <a
-        class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2"
-      >
+      <a class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-train-lightrail-front text-white text-2xl"></i>
         <span class="flex items-center text-white text-xs font-semibold">
           Perfume
@@ -99,9 +94,7 @@
             </ul> -->
       </a>
 
-      <a
-        class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2"
-      >
+      <a class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-phone text-white text-2xl"></i>
         <span class="flex items-center text-white text-xs font-semibold">
           Telefones
@@ -111,9 +104,7 @@
             </ul> -->
       </a>
 
-      <a
-        class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2"
-      >
+      <a class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-pc-display text-white text-2xl"></i>
         <span class="flex items-center text-white text-xs font-semibold">
           Computadores
@@ -123,9 +114,7 @@
             </ul> -->
       </a>
 
-      <a
-        class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2"
-      >
+      <a class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-palette2 text-white text-2xl"></i>
         <span class="flex items-center text-white text-xs font-semibold">
           Calçados
@@ -134,9 +123,7 @@
               akmmakfkac
             </ul> -->
       </a>
-      <a
-        class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2"
-      >
+      <a class="w-full group cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-music-note-beamed text-white text-2xl"></i>
         <span class="flex items-center text-white text-xs font-semibold">
           Imagem e Som
@@ -146,33 +133,18 @@
             </ul> -->
       </a>
     </div>
-    <div
-      id="carouselExampleCaptions"
-      class="carousel slide w-full"
-      data-ride="carousel"
-    >
+    <div id="carouselExampleCaptions" class="carousel slide w-full" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleCaptions"
-          data-slide-to="0"
-          class="active"
-        ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img
-            src="https://ndca-online-demo.netlify.app/assets/images/banners/bg02-Recuperado.jpg"
-            class="d-block w-100 h-96"
-            alt="..."
-          />
-          <div
-            class="carousel-caption inset-0 bg-black/30 flex items-center justify-center"
-          >
-            <div
-              class="flex items-start absolute left-24 gap-2 flex-col text-white"
-            >
+          <img src="https://ndca-online-demo.netlify.app/assets/images/banners/bg02-Recuperado.jpg"
+            class="d-block w-100 h-96" alt="..." />
+          <div class="carousel-caption inset-0 bg-black/30 flex items-center justify-center">
+            <div class="flex items-start absolute left-24 gap-2 flex-col text-white">
               <h1 class="text-3xl max-w-[14rem] font-bold text-start">
                 Bem-vindo a NDCA-Online
               </h1>
@@ -184,17 +156,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="https://ndca-online-demo.netlify.app/assets/images/banners/bg01.jpg"
-            class="d-block w-100 h-96"
-            alt="..."
-          />
-          <div
-            class="carousel-caption inset-0 bg-black/30 flex items-center justify-center"
-          >
-            <div
-              class="flex items-start absolute left-24 gap-2 flex-col text-white"
-            >
+          <img src="https://ndca-online-demo.netlify.app/assets/images/banners/bg01.jpg" class="d-block w-100 h-96"
+            alt="..." />
+          <div class="carousel-caption inset-0 bg-black/30 flex items-center justify-center">
+            <div class="flex items-start absolute left-24 gap-2 flex-col text-white">
               <h1 class="text-3xl max-w-[16rem] font-bold text-start">
                 Visite as nossas Farmácias
               </h1>
@@ -206,17 +171,10 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="https://ndca-online-demo.netlify.app/assets/images/banners/bg03.jpg"
-            class="d-block w-100 h-96"
-            alt="..."
-          />
-          <div
-            class="carousel-caption inset-0 bg-black/30 flex items-center justify-center"
-          >
-            <div
-              class="flex items-start absolute left-24 gap-2 flex-col text-white"
-            >
+          <img src="https://ndca-online-demo.netlify.app/assets/images/banners/bg03.jpg" class="d-block w-100 h-96"
+            alt="..." />
+          <div class="carousel-caption inset-0 bg-black/30 flex items-center justify-center">
+            <div class="flex items-start absolute left-24 gap-2 flex-col text-white">
               <h1 class="text-3xl max-w-[14rem] font-bold text-start">
                 Visite a nossa Gráfica
               </h1>
@@ -226,21 +184,11 @@
           </div>
         </div>
       </div>
-      <a
-        class="carousel-control-prev z-50"
-        href="#carouselExampleCaptions"
-        role="button"
-        data-slide="prev"
-      >
+      <a class="carousel-control-prev z-50" href="#carouselExampleCaptions" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a
-        class="carousel-control-next z-50"
-        href="#carouselExampleCaptions"
-        role="button"
-        data-slide="next"
-      >
+      <a class="carousel-control-next z-50" href="#carouselExampleCaptions" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
@@ -248,223 +196,99 @@
   </div>
 </header>
 <main>
-  <section class="m-auto max-w-[1170px] pt-14">
+  <section class="m-auto max-w-[1170px] max-[1024px]:px-8 pt-14">
     <div class="col-12 text-center">
       <h3 class="mb-3 text-xl font-light">EM DESTAQUES</h3>
     </div>
     <div class="row mt-7">
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4  col-lg-3 col-sm-6 mb-3">
         <div class="cad">
-          <div
-            class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-          >
-            <img
-              class="h-64 relative"
-              alt="100%x280"
-              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-            />
+          <div class="relative rounded-sm transition-all overflow-hidden group cursor-pointer">
+            <img class="h-64 relative w-full" alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
             <div
-              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-            >
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                ><i class="bi bi-ticket-detailed font-extrabold"></i>
+              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white">
+              <a href="" class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"><i
+                  class="bi bi-ticket-detailed font-extrabold"></i>
                 Detalhes
               </a>
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                >+ <i class="bi bi-cart3 font-extrabold"></i
-              ></a>
+              <a href="" class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm">+ <i
+                  class="bi bi-cart3 font-extrabold"></i></a>
             </div>
           </div>
 
           <div class="text-center py-3">
             <h4 class="text-blue-800">Dipirona</h4>
-            <span class="text-xs text-alabaster-800"
-              >Acessórios informáticos</span
-            >
+            <span class="text-xs text-alabaster-800">Acessórios informáticos</span>
             <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4  col-lg-3 col-sm-6 mb-3">
         <div class="cad">
-          <div
-            class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-          >
-            <img
-              class="h-64 relative"
-              alt="100%x280"
-              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-            />
+          <div class="relative rounded-sm transition-all overflow-hidden group cursor-pointer">
+            <img class="h-64 relative w-full" alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
             <div
-              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-            >
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                ><i class="bi bi-ticket-detailed font-extrabold"></i>
+              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white">
+              <a href="" class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"><i
+                  class="bi bi-ticket-detailed font-extrabold"></i>
                 Detalhes
               </a>
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                >+ <i class="bi bi-cart3 font-extrabold"></i
-              ></a>
+              <a href="" class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm">+ <i
+                  class="bi bi-cart3 font-extrabold"></i></a>
             </div>
           </div>
 
           <div class="text-center py-3">
             <h4 class="text-blue-800">Dipirona</h4>
-            <span class="text-xs text-alabaster-800"
-              >Acessórios informáticos</span
-            >
+            <span class="text-xs text-alabaster-800">Acessórios informáticos</span>
             <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4  col-lg-3 col-sm-6 mb-3">
         <div class="cad">
-          <div
-            class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-          >
-            <img
-              class="h-64 relative"
-              alt="100%x280"
-              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-            />
+          <div class="relative rounded-sm transition-all overflow-hidden group cursor-pointer">
+            <img class="h-64 relative w-full" alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
             <div
-              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-            >
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                ><i class="bi bi-ticket-detailed font-extrabold"></i>
+              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white">
+              <a href="" class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"><i
+                  class="bi bi-ticket-detailed font-extrabold"></i>
                 Detalhes
               </a>
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                >+ <i class="bi bi-cart3 font-extrabold"></i
-              ></a>
+              <a href="" class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm">+ <i
+                  class="bi bi-cart3 font-extrabold"></i></a>
             </div>
           </div>
 
           <div class="text-center py-3">
             <h4 class="text-blue-800">Dipirona</h4>
-            <span class="text-xs text-alabaster-800"
-              >Acessórios informáticos</span
-            >
+            <span class="text-xs text-alabaster-800">Acessórios informáticos</span>
             <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4  col-lg-3 col-sm-6 mb-3">
         <div class="cad">
-          <div
-            class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-          >
-            <img
-              class="h-64 relative"
-              alt="100%x280"
-              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-            />
+          <div class="relative rounded-sm transition-all overflow-hidden group cursor-pointer">
+            <img class="h-64 relative w-full" alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
             <div
-              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-            >
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                ><i class="bi bi-ticket-detailed font-extrabold"></i>
+              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white">
+              <a href="" class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"><i
+                  class="bi bi-ticket-detailed font-extrabold"></i>
                 Detalhes
               </a>
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                >+ <i class="bi bi-cart3 font-extrabold"></i
-              ></a>
+              <a href="" class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm">+ <i
+                  class="bi bi-cart3 font-extrabold"></i></a>
             </div>
           </div>
 
           <div class="text-center py-3">
             <h4 class="text-blue-800">Dipirona</h4>
-            <span class="text-xs text-alabaster-800"
-              >Acessórios informáticos</span
-            >
-            <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="cad">
-          <div
-            class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-          >
-            <img
-              class="h-64 relative"
-              alt="100%x280"
-              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-            />
-            <div
-              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-            >
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                ><i class="bi bi-ticket-detailed font-extrabold"></i>
-                Detalhes
-              </a>
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                >+ <i class="bi bi-cart3 font-extrabold"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="text-center py-3">
-            <h4 class="text-blue-800">Dipirona</h4>
-            <span class="text-xs text-alabaster-800"
-              >Acessórios informáticos</span
-            >
-            <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="cad">
-          <div
-            class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-          >
-            <img
-              class="h-64 relative"
-              alt="100%x280"
-              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-            />
-            <div
-              class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-            >
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                ><i class="bi bi-ticket-detailed font-extrabold"></i>
-                Detalhes
-              </a>
-              <a
-                href=""
-                class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                >+ <i class="bi bi-cart3 font-extrabold"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="text-center py-3">
-            <h4 class="text-blue-800">Dipirona</h4>
-            <span class="text-xs text-alabaster-800"
-              >Acessórios informáticos</span
-            >
+            <span class="text-xs text-alabaster-800">Acessórios informáticos</span>
             <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
           </div>
         </div>
@@ -472,7 +296,7 @@
     </div>
   </section>
 
-  <section class="m-auto max-w-[1170px] py-2 relative">
+  <section class="m-auto max-w-[1170px] max-[1024px]:px-8 py-2 relative">
     <div class="mt-12">
       <div class="row">
         <div class="col-12 text-center">
@@ -480,185 +304,136 @@
         </div>
 
         <div class="col-12 mt-7">
-          <div
-            id="carouselExampleIndicators2"
-            class="carousel slide"
-            data-ride="carousel"
-          >
+          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row">
-                  <div class="col-md-4 mb-3">
+                  <div class="col-md-4  col-lg-3 col-sm-6 mb-3">
                     <div class="cad">
-                      <div
-                        class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-                      >
-                        <img
-                          class="h-64 relative"
-                          alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-                        />
+                      <div class="relative rounded-sm transition-all overflow-hidden group cursor-pointer">
+                        <img class="h-64 relative w-full" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
                         <div
-                          class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-                        >
-                          <a
-                            href=""
-                            class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                            ><i
-                              class="bi bi-ticket-detailed font-extrabold"
-                            ></i>
+                          class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white">
+                          <a href="" class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"><i
+                              class="bi bi-ticket-detailed font-extrabold"></i>
                             Detalhes
                           </a>
-                          <a
-                            href=""
-                            class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                            >+ <i class="bi bi-cart3 font-extrabold"></i
-                          ></a>
+                          <a href="" class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm">+ <i
+                              class="bi bi-cart3 font-extrabold"></i></a>
                         </div>
                       </div>
 
                       <div class="text-center py-3">
                         <h4 class="text-blue-800">Dipirona</h4>
-                        <span class="text-xs text-alabaster-800"
-                          >Acessórios informáticos</span
-                        >
-                        <p class="card-text text-green-900 font-extrabold">
-                          1000 AOA
-                        </p>
+                        <span class="text-xs text-alabaster-800">Acessórios informáticos</span>
+                        <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mb-3">
+                  <div class="col-md-4  col-lg-3 col-sm-6 mb-3">
                     <div class="cad">
-                      <div
-                        class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-                      >
-                        <img
-                          class="h-64 relative"
-                          alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-                        />
+                      <div class="relative rounded-sm transition-all overflow-hidden group cursor-pointer">
+                        <img class="h-64 relative w-full" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
                         <div
-                          class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-                        >
-                          <a
-                            href=""
-                            class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                            ><i
-                              class="bi bi-ticket-detailed font-extrabold"
-                            ></i>
+                          class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white">
+                          <a href="" class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"><i
+                              class="bi bi-ticket-detailed font-extrabold"></i>
                             Detalhes
                           </a>
-                          <a
-                            href=""
-                            class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                            >+ <i class="bi bi-cart3 font-extrabold"></i
-                          ></a>
+                          <a href="" class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm">+ <i
+                              class="bi bi-cart3 font-extrabold"></i></a>
                         </div>
                       </div>
 
                       <div class="text-center py-3">
                         <h4 class="text-blue-800">Dipirona</h4>
-                        <span class="text-xs text-alabaster-800"
-                          >Acessórios informáticos</span
-                        >
-                        <p class="card-text text-green-900 font-extrabold">
-                          1000 AOA
-                        </p>
+                        <span class="text-xs text-alabaster-800">Acessórios informáticos</span>
+                        <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4 mb-3">
+                  <div class="col-md-4  col-lg-3 col-sm-6 mb-3">
                     <div class="cad">
-                      <div
-                        class="relative rounded-sm transition-all overflow-hidden group cursor-pointer"
-                      >
-                        <img
-                          class="h-64 relative"
-                          alt="100%x280"
-                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d"
-                        />
+                      <div class="relative rounded-sm transition-all overflow-hidden group cursor-pointer">
+                        <img class="h-64 relative w-full" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
                         <div
-                          class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white"
-                        >
-                          <a
-                            href=""
-                            class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"
-                            ><i
-                              class="bi bi-ticket-detailed font-extrabold"
-                            ></i>
+                          class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white">
+                          <a href="" class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"><i
+                              class="bi bi-ticket-detailed font-extrabold"></i>
                             Detalhes
                           </a>
-                          <a
-                            href=""
-                            class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm"
-                            >+ <i class="bi bi-cart3 font-extrabold"></i
-                          ></a>
+                          <a href="" class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm">+ <i
+                              class="bi bi-cart3 font-extrabold"></i></a>
                         </div>
                       </div>
 
                       <div class="text-center py-3">
                         <h4 class="text-blue-800">Dipirona</h4>
-                        <span class="text-xs text-alabaster-800"
-                          >Acessórios informáticos</span
-                        >
-                        <p class="card-text text-green-900 font-extrabold">
-                          1000 AOA
-                        </p>
+                        <span class="text-xs text-alabaster-800">Acessórios informáticos</span>
+                        <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4  col-lg-3 col-sm-6 mb-3">
+                    <div class="cad">
+                      <div class="relative rounded-sm transition-all overflow-hidden group cursor-pointer">
+                        <img class="h-64 relative w-full" alt="100%x280"
+                          src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+                        <div
+                          class="absolute gap-3 hidden inset-0 group-hover:flex items-center justify-center bg-black/50 text-white">
+                          <a href="" class="p-1 hover:text-white/40 transition bg-blue-700 font-light rounded-sm"><i
+                              class="bi bi-ticket-detailed font-extrabold"></i>
+                            Detalhes
+                          </a>
+                          <a href="" class="p-1 hover:text-white/40 transition bg-green-700 font-bold rounded-sm">+ <i
+                              class="bi bi-cart3 font-extrabold"></i></a>
+                        </div>
+                      </div>
+
+                      <div class="text-center py-3">
+                        <h4 class="text-blue-800">Dipirona</h4>
+                        <span class="text-xs text-alabaster-800">Acessórios informáticos</span>
+                        <p class="card-text text-green-900 font-extrabold">1000 AOA</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-right">
-      <a
-        class="flex items-center justify-center mb-3 mr-1 absolute top-0 bottom-0 -left-12"
-        href="#carouselExampleIndicators2"
-        role="button"
-        data-slide="prev"
-      >
-        <i
-          class="bi bi-arrow-left flex items-center justify-center bg-white h-8 w-8 text-lg rounded-full"
-        ></i>
+    <div class="max-[900px]:hidden">
+      <a class="flex items-center justify-center mb-3  absolute top-0 bottom-0 -left-12"
+        href="#carouselExampleIndicators2" role="button" data-slide="prev">
+        <i class="bi bi-arrow-left flex items-center justify-center bg-white h-8 w-8 text-lg rounded-full"></i>
       </a>
-      <a
-        class="flex items-center justify-center mb-3 absolute top-0 bottom-0 -right-12"
-        href="#carouselExampleIndicators2"
-        role="button"
-        data-slide="next"
-      >
-        <i
-          class="bi bi-arrow-right flex items-center justify-center bg-white h-8 w-8 text-lg rounded-full"
-        ></i>
+      <a class="flex items-center justify-center mb-3 absolute top-0 bottom-0 -right-12"
+        href="#carouselExampleIndicators2" role="button" data-slide="next">
+        <i class="bi bi-arrow-right flex items-center justify-center bg-white h-8 w-8 text-lg rounded-full"></i>
       </a>
     </div>
   </section>
 </main>
 <footer class="bg-white ">
-  <div class="m-auto max-w-[1170px] flex border-t-2 border-green-700">
+  <div
+    class="m-auto max-w-[1170px] max-[1024px]:px-8 max-[900px]:flex-col max-[1024px]:gap-2  flex border-t-2 border-green-700">
     <div class="bg-alabaster-100">
       <div class="w-72 h-28">
-        <img
-          class="w-full h-full"
-          src="../assets/logotiporectang-removebg-preview.png"
-          alt=""
-        />
+        <img class="w-full h-full" src="../assets/logotiporectang-removebg-preview.png" alt="" />
       </div>
       <div
-        class="flex flex-col justify-between bg-gradient-to-l py-3 px-4 from-green-500 via-green-700 to-green-900 h-96"
-      >
+        class="flex flex-col justify-between bg-gradient-to-l py-3 px-4 from-green-500 via-green-700 to-green-900 h-96">
         <ul class="flex flex-col gap-5">
           <li class="font-bold text-white">
             Telefones
             <ul>
-              <a class="text-sm text-gray-300 font-medium"
-                >944 145 409 / 934 180 403</a
-              >
+              <a class="text-sm text-gray-300 font-medium">944 145 409 / 934 180 403</a>
             </ul>
           </li>
 
@@ -676,8 +451,7 @@
             Endereço
             <ul>
               <a class="text-sm text-gray-300 font-medium">
-                Kapolo 2 por de trás da Utanga</a
-              >
+                Kapolo 2 por de trás da Utanga</a>
             </ul>
           </li>
         </ul>
@@ -685,96 +459,201 @@
         <div>SIGA-NOS</div>
       </div>
     </div>
-    <div class="bg-alabaster-100">
-      <div
-        class="flex flex-col justify-between py-3 w-52 px-4 h-full bg-alabaster-500"
-      >
-        <ul class="flex flex-col gap-5">
-          <li class="font-bold">
-            SERVIÇOS
-            <ul class="flex flex-col gap-2 mt-2">
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Ajuda Oline</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Contacte-nos</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Ordenar Estados</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Mudar localização</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">FAQ</a>
-            </ul>
-          </li>
+    <div class="flex max-[900px]:flex-col">
+      <div class="bg-alabaster-100">
+        <div class="flex flex-col justify-between py-3 w-52 max-[900px]:w-full px-4 h-full bg-alabaster-500">
+          <ul class="flex flex-col gap-5">
+            <li class="font-bold">
+              SERVIÇOS
+              <ul class="flex flex-col gap-2 mt-2">
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Ajuda
+                  Oline</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Contacte-nos</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Ordenar
+                  Estados</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Mudar
+                  localização</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">FAQ</a>
+              </ul>
+            </li>
 
-          <li class="font-bold">
-            SOBRE
-            <ul class="flex flex-col gap-2 mt-2">
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Sobre nós</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Privacy police</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Refundy Policy</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Termos e Condições</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Contacte-nos</a>
-            </ul>
-          </li>
-        </ul>
+            <li class="font-bold">
+              SOBRE
+              <ul class="flex flex-col gap-2 mt-2">
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Sobre
+                  nós</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Privacy
+                  police</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Refundy
+                  Policy</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Termos
+                  e
+                  Condições</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Contacte-nos</a>
+              </ul>
+            </li>
+          </ul>
 
-        <div>SIGA-NOS</div>
+          <div>SIGA-NOS</div>
+        </div>
+      </div>
+      <div class="bg-alabaster-100 ml-1">
+        <div class="flex flex-col justify-between py-3 w-52 px-4 h-full bg-alabaster-500">
+          <ul class="flex flex-col gap-5">
+            <li class="font-bold">
+              MINHA CONTA
+              <ul class="flex flex-col gap-2 mt-2">
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Login</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Registar-se</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Minha
+                  Carinha</a>
+                <a href=""
+                  class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Meu
+                  Carrinho</a>
+              </ul>
+            </li>
+          </ul>
+
+          <div>SIGA-NOS</div>
+        </div>
       </div>
     </div>
-    <div class="bg-alabaster-100 ml-1">
-      <div
-        class="flex flex-col justify-between py-3 w-52 px-4 h-full bg-alabaster-500"
-      >
-        <ul class="flex flex-col gap-5">
-          <li class="font-bold">
-            MINHA CONTA
-            <ul class="flex flex-col gap-2 mt-2">
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Login</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Registar-se</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Minha Carinha</a>
-              <a href="" class="text-xs cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">Meu Carrinho</a>
-            </ul>
-          </li>
-        </ul>
 
-        <div>SIGA-NOS</div>
-      </div>
-    </div>
 
     <div class="bg-alabaster-100 ml-1 w-full">
-      <div
-        class="flex flex-col justify-between py-3  px-4 h-full bg-alabaster-500"
-      >
+      <div class="flex flex-col justify-between py-3  px-4 h-full bg-alabaster-500">
         <ul class="flex flex-col gap-5">
           <li class="font-bold">
             <h1 class="">NEWSLETTER</h1>
             <p class="mt-4 font-extralight text-xs">Todas as novidades NDCA no teu email</p>
             <form action="">
-              <input type="text" name="" id=""  placeholder="Insire o teu email"
-               class="py-2 mt-2 px-2 placeholder:font-light placeholder:text-alabaster-800 border-alabaster-900 bg-white border rounded-sm"
-              >
-              <button class="w-full py-2 mt-3 text-sm  rounded-sm text-alabaster-200 bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900">Inscrever</button>
+              <input type="text" name="" id="" placeholder="Insire o teu email"
+                class="py-2 w-full mt-2 px-2 placeholder:font-light placeholder:text-alabaster-800 border-alabaster-900 bg-white border rounded-sm">
+              <button
+                class="w-full py-2 mt-3 text-sm transition-all hover:brightness-90  rounded-sm text-alabaster-200 bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900">Inscrever</button>
             </form>
           </li>
         </ul>
-
-        <div>
-          <h1>SIGA-NOS</h1>
-          <div>
-
-          </div>
-        </div>
       </div>
     </div>
   </div>
   <div class="border-green-600 py-4 border-t-4 bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900">
-    <div
-    class="m-auto max-w-[1170px]  flex items-center justify-between uppercase"
-  >
-    <div class="flex items-center gap-3 text-white">
-      <a>Inicio</a>
-      <a>Protutos</a>
-      <a>Carrinho</a>
-      <a>Sobre</a>
+    <div class="m-auto max-w-[1170px] gap-2  flex items-center justify-between max-[1024px]:flex-col">
+      <div class="flex items-center gap-3 text-white max-[1024px]:text-sm">
+        <a>Inicio</a>
+        <a>Protutos</a>
+        <a>Carrinho</a>
+        <a>Sobre</a>
+      </div>
+      <div class="flex gap-3">
+        <p class="text-xs font-light text-alabaster-600">© 2023, NDCA-STORE. Todos direitos reservados</p>
+      </div>
     </div>
-    <div class="flex gap-3">
-      <p class="text-xs font-light text-alabaster-600">© 2023, NDCA-STORE. Todos direitos reservados</p>
-    </div>
-  </div>
   </div>
 </footer>
+
+<aside id="Asider"  class="absolute  transition-opacity inset-0 bg-black/50 z-50  hidden min-[1024px]:hidden  opacity-0">
+  <button id="AsiderButtonClose" class="p-3 h-4 w-4 rounded-full float-right flex items-center justify-center m-4  bg-white text-alabaster-900 font-extrabold" >X</button>
+  <div class="w-9/12  bg-white h-full">
+    <div class="flex pr-3 shadow-md items-center justify-between gap-3">
+      <img class="w-32" src="https://ndca-online-demo.netlify.app/assets/images/logondca/logotiporectang.png" alt="" />
+      <ul class="max-[1024px]:text-sm max-[900px]:text-xs flex items-center gap-3">
+        <a>Entrar</a>
+        <a>Criar Conta</a>
+      </ul>
+
+    </div>
+    <div class="w-full flex items-center gap-3  justify-between px-3  border-b-4 border-white p-2 ">
+      <ul class="max-[1024px]:text-sm  flex items-center gap-3">
+        <a href="#" class="transition-all hover:text-blue-700 ">Inicio</a>
+        <a href="#" class="transition-all hover:text-blue-700 ">Protutos</a>
+        <a href="#" class="transition-all hover:text-blue-700 ">Carrinho</a>
+        <a href="#" class="transition-all hover:text-blue-700 ">Sobre</a>
+      </ul>
+    </div>
+
+
+    <div
+      class="w-full flex items-center gap-3  justify-between px-3  border-b-4 border-white p-2  from-blue-700 bg-gradient-to-r via-blue-700 to-blue-900">
+      <div class="flex items-center gap-3">
+        <i class="bi bi-list text-2xl text-white font-semibold"></i>
+        <span class="flex items-center text-white text-sm font-semibold">
+          Categoria de produtos
+        </span>
+      </div>
+      <i class="bi bi-chevron-down text-white/40  self-end"></i>
+    </div>
+    <div class="w-full">
+      <a class="w-full  px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+        <i class="bi bi-laptop group-hover:text-white text-2xl"></i>
+        <span class="flex items-center group-hover:text-white text-xs font-semibold">
+          Acessórios e Informática
+        </span>
+        <!-- <ul class="hidden w-[300px] absolute bottom-0 z-30 top-0 left-[17rem] bg-black group-hover:flex">
+              akmmakfkac
+            </ul> -->
+      </a>
+      <a class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+        <i class="bi bi-train-lightrail-front group-hover:text-white text-2xl"></i>
+        <span class="flex items-center group-hover:text-white text-xs font-semibold">
+          Perfume
+        </span>
+        <!-- <ul class="hidden w-[300px] absolute bottom-0 z-30 top-0 left-[17rem] bg-black group-hover:flex">
+              akmmakfkac
+            </ul> -->
+      </a>
+
+      <a class="w-full  px-3 group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+        <i class="bi bi-phone group-hover:text-white text-2xl"></i>
+        <span class="flex items-center group-hover:text-white text-xs font-semibold">
+          Telefones
+        </span>
+        <!-- <ul class="hidden w-[300px] absolute bottom-0 z-30 top-0 left-[17rem] bg-black group-hover:flex">
+              akmmakfkac
+            </ul> -->
+      </a>
+
+      <a class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+        <i class="bi bi-pc-display group-hover:text-white text-2xl"></i>
+        <span class="flex items-center group-hover:text-white text-xs font-semibold">
+          Computadores
+        </span>
+        <!-- <ul class="hidden w-[300px] absolute bottom-0 z-30 top-0 left-[17rem] bg-black group-hover:flex">
+              akmmakfkac
+            </ul> -->
+      </a>
+
+      <a class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+        <i class="bi bi-palette2 group-hover:text-white text-2xl"></i>
+        <span class="flex items-center group-hover:text-white text-xs font-semibold">
+          Calçados
+        </span>
+        <!-- <ul class="hidden w-[300px] absolute bottom-0 z-30 top-0 left-[17rem] bg-black group-hover:flex">
+              akmmakfkac
+            </ul> -->
+      </a>
+      <a class="w-full  px-3 group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+        <i class="bi bi-music-note-beamed group-hover:text-white text-2xl"></i>
+        <span class="flex items-center group-hover:text-white text-xs font-semibold">
+          Imagem e Som
+        </span>
+        <!-- <ul class="hidden w-[300px] absolute bottom-0 z-30 top-0 left-[17rem] bg-black group-hover:flex">
+              akmmakfkac
+            </ul> -->
+      </a>
+    </div>
+  </div>
+</aside>
