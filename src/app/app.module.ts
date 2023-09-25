@@ -12,6 +12,9 @@ import { ContatoComponent } from './contato/contato.component';
 import { ServiceComponent } from './service/service.component';
 import { LoginComponent } from './login/login.component';
 import { AcountComponent } from './acount/acount.component';
+import { NewsComponent } from './news/news.component';
+import { NewsDComponent } from './news-d/news-d.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { AcountComponent } from './acount/acount.component';
     ContatoComponent,
     ServiceComponent,
     LoginComponent,
-    AcountComponent
+    AcountComponent,
+    NewsComponent,
+    NewsDComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -27,13 +27,59 @@
         </ul>
 
       </div>
+      <div class="flex items-center gap-7">
+
+      
       <div class="flex gap-3 max-[1024px]:text-sm max-[900px]:hidden">
         <a href="#" class="hover:text-blue-500 transition-all">Login</a>
         <a href="#" class="hover:text-blue-500 transition-all">Conta</a>
       </div>
+      <div class="relative inline-block text-left">
+        <div class="flex items-center gap-3">
+          <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://github.com/manuelfreitasc.png" alt="wqwe"/>
+          <button onclick="myFunction()" type="button" class="dropbtn inline-flex w-full justify-center gap-x-1.5 rounded-md 
+           px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
+           Perfil
+            <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      
+        <!--
+          Dropdown menu, show/hide based on menu state.
+      
+          Entering: "transition ease-out duration-100"
+            From: "transform opacity-0 scale-95"
+            To: "transform opacity-100 scale-100"
+          Leaving: "transition ease-in duration-75"
+            From: "transform opacity-100 scale-100"
+            To: "transform opacity-0 scale-95"
+        -->
+        <div id="myDropdown" class="dropdown-content hidden absolute right-0 z-50 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+          <div class="py-1" role="none">
+            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a>
+          </div>
+          <div class="py-1" role="none">
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Archive</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Move</a>
+          </div>
+          <div class="py-1" role="none">
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Share</a>
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Add to favorites</a>
+          </div>
+          <div class="py-1" role="none">
+            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-6">Delete</a>
+          </div>
+        </div>
+      </div>
+      
       <button class="min-[900px]:hidden m-2 w-12 py-1 focus:border border-gray-90 hover:bg-gray-300"  id="AsiderButton">
         <i id="AsiderButtonICon" class="bi  bi-list text-black text-2xl  font-extrabold"></i>
       </button>
+    </div>
     </div>
   </nav>
   <div class="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900">
@@ -49,12 +95,46 @@
       </div>
 
       <div class="flex w-full min-[900px]:ml-80 items-end gap-3">
-        <form class="w-full flex items-end relative justify-end">
+       <!--  <form class="w-full flex items-end relative justify-end">
           <i class="bi bi-search absolute bottom-1 right-3 text-alabaster-600/50"></i>
           <input
             class="w-4/5 max-[900px]:w-full rounded-sm border-[0.0599rem] border-alabaster-600/40 py-1 pl-3 pr-9 outline-0 bg-transparent"
             type="text" name="" id="" placeholder="O que precuras ?" />
-        </form>
+        </form> -->
+
+
+          <button class="relative  w-full 
+          ">
+             <div class=" max-[900px]:w-full relative ">
+                  <input type="text" name="" id="search" placeholder="Pesquesar produto"
+                  class="w-full max-[900px]:w-full rounded-sm border-[0.0599rem] border-alabaster-600/40  py-1 pl-3 pr-9 outline-0 bg-transparent" >
+             
+                  <i class="bi bi-search  bottom-1  right-3 text-alabaster-700 absolute "></i>
+              </div>
+              <div id="ADsearchPortal" class="absolute ad-hidden inset-0 top-[34px] transition-all rounded-b z-40  border-[1px] border-alabaster-600  overflow-hidden  bg-alabaster-100 h-fit">
+                 <ul class="w-full py-1">
+                      <a href="#" class="w-full flex items-start gap-3  px-3 py-1 transition-all group  hover:bg-blue-700  text-sm font-extraaght">
+                     <!--      <img class=" w-10 h-10 rounded-full"
+                                          src="https://ecommerce-api-4bxi.onrender.com/api/v1/product-preview/tmp/products/Apple%20iPhone%2014-1690631295381.jpeg"
+                                          alt="iphone"> -->
+                      <div class="flex flex-col items-start">
+                       <span class="text-sm font-bold text-alabaster-700 group-hover:text-alabaster-200">Arroz</span>
+                       <p class="text-xs font-extralight text-alabaster-700 group-hover:text-alabaster-400">Lorem ipsum dolor sit amet consectetur</p>
+                      </div>
+                      </a>
+                      <a href="#" class="w-full flex items-start px-3 py-1 transition-all group  hover:bg-blue-700  text-sm font-extraaght">
+                          <div class="flex flex-col items-start">
+                           <span class="text-sm font-bold text-alabaster-700 group-hover:text-alabaster-200">Arroz</span>
+                           <p class="text-xs font-extralight text-alabaster-700 group-hover:text-alabaster-400">Lorem ipsum dolor sit amet consectetur</p>
+                          </div>
+                          </a>
+                  </ul>
+              </div>
+          </button>
+
+
+
+
 
         <button class="flex items-center transition-all hover:brightness-90 text-white  max-[900px]:hidden rounded border-0 bg-green-700">
           <span class="py-1 px-3">Carrinho</span>

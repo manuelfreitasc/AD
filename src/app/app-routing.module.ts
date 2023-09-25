@@ -10,16 +10,19 @@ import { ContatoComponent } from './contato/contato.component';
 import { ServiceComponent } from './service/service.component';
 import { LoginComponent } from './login/login.component';
 import { AcountComponent } from './acount/acount.component';
+import { NewsComponent } from './news/news.component';
+import { NewsDComponent } from './news-d/news-d.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
   },
-   {
+  {
     path: 'log',
     component: LoginComponent,
-  },   {
+  }, {
     path: 'aco',
     component: AcountComponent,
   },
@@ -47,10 +50,22 @@ const routes: Routes = [
     path: 'serv',
     component: ServiceComponent,
   },
+  {
+    path: 'new',
+    component: NewsComponent,
+  },
+  {
+    path: 'nd',
+    component: NewsDComponent,
+  },
+   {
+    path: 'pro',
+    component: ProfileComponent,
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

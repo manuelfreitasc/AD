@@ -1,0 +1,382 @@
+<header class="">
+    <div class="bg-green-600  max-[1024px]:px-8">
+        <div class="m-auto max-w-[1170px] py-2 flex items-center justify-between">
+            <div class="flex items-center justify-center gap-3 text-[0.850rem] font-extralight max-[1024px]:text-sm ">
+                <span class="text-white cursor-pointer  max-[900px]:text-xs">+244 944 145 409</span>
+                <span class="text-white cursor-pointer max-[900px]:text-xs">geral@ndca.com</span>
+            </div>
+            <div class="flex items-center gap-3 font-extralight text-[0.850rem]">
+                <a class="text-white cursor-pointer font-extralight"><i class="bi bi-facebook"></i></a>
+                <a class="text-white cursor-pointer"><i class="bi bi-whatsapp"></i></a>
+                <a class="text-white cursor-pointer"><i class="bi bi-linkedin"></i></a>
+                <a class="text-white cursor-pointer"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-white border-b">
+        <div class="m-auto max-w-[1170px] max-[1024px]:px-8 py-1 flex items-center justify-between uppercase">
+            <div class="flex items-center gap-3">
+                <img class="w-24" src="https://ndca-online-demo.netlify.app/assets/images/logondca/logotiporectang.png"
+                    alt="" />
+                <ul class="max-[1024px]:text-sm max-[900px]:text-xs max-[900px]:hidden flex items-center gap-3">
+                    <a href="#" class="hover:text-blue-500 transition-all">Inicio</a>
+                    <a href="#" class="hover:text-blue-500 transition-all">Protutos</a>
+                    <a href="#" class="hover:text-blue-500 transition-all">Carrinho</a>
+                    <a href="#" class="hover:text-blue-500 transition-all">Sobre</a>
+                </ul>
+
+            </div>
+            <div class="flex items-center gap-7">
+
+
+                <div class="flex gap-3 max-[1024px]:text-sm max-[900px]:hidden">
+                    <a href="#" class="hover:text-blue-500 transition-all">Login</a>
+                    <a href="#" class="hover:text-blue-500 transition-all">Conta</a>
+                </div>
+                <div class="relative inline-block text-left">
+                    <div class="flex items-center gap-3">
+                        <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                            src="https://github.com/manuelfreitasc.png" alt="wqwe" />
+                        <button onclick="myFunction()" type="button" class="dropbtn inline-flex w-full justify-center gap-x-1.5 rounded-md 
+             px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                            id="menu-button" aria-expanded="true" aria-haspopup="true">
+                            Perfil
+                            <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!--
+            Dropdown menu, show/hide based on menu state.
+        
+            Entering: "transition ease-out duration-100"
+              From: "transform opacity-0 scale-95"
+              To: "transform opacity-100 scale-100"
+            Leaving: "transition ease-in duration-75"
+              From: "transform opacity-100 scale-100"
+              To: "transform opacity-0 scale-95"
+          -->
+                    <div id="myDropdown"
+                        class="dropdown-content hidden absolute right-0 z-50 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                        role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                        <div class="py-1" role="none">
+                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-0">Edit</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-1">Duplicate</a>
+                        </div>
+                        <div class="py-1" role="none">
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-2">Archive</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-3">Move</a>
+                        </div>
+                        <div class="py-1" role="none">
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-4">Share</a>
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-5">Add to favorites</a>
+                        </div>
+                        <div class="py-1" role="none">
+                            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                                id="menu-item-6">Delete</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="min-[900px]:hidden m-2 w-12 py-1 focus:border border-gray-90 hover:bg-gray-300"
+                    id="AsiderButton">
+                    <i id="AsiderButtonICon" class="bi  bi-list text-black text-2xl  font-extrabold"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+</header>
+<main>
+    <section class="m-auto max-w-[1170px] flex max-[1024px]:px-8  max-[900px]:flex-col py-10 relative  gap-2">
+        <div class="tab min-[900px]:w-[300px]  py-3 max-[900px]:w-full ">
+            <div class="w-full flex flex-col gap-2 items-center justify-center">
+                <img class="inline-block  h-24 w-24 rounded-full  ring-4 ring-white shadow-xl"
+                    src="https://github.com/manuelfreitasc.png" alt="wqwe" />
+                <div class="flex flex-col items-center">
+                    <span class="text-sm  curso
+                        r-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">
+                        Manuel antonio
+                    </span>
+                    <span
+                        class="text-sm  cursor-pointer transition-colors hover:text-blue-700 text-gray-500 font-medium">
+                        manuel.antonio@nelo.com
+                    </span>
+                </div>
+
+            </div>
+            <div class="flex flex-col w-full divide-y-8-y-">
+                <div class="w-full flex  max-[900px]:flex-row">
+                    <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'Encomendas')">Encomendas</button>
+                    <button class="tablinks" onclick="openCity(event, 'Endereco')">Endereço</button>
+                    <button class="tablinks" onclick="openCity(event, 'Conta')">Conta</button>
+                </div>
+               <div class="w-full mt-4 border-t py-1">
+                <button class="tablinks " >Terminar sessão</button>
+            </div>
+            </div>
+
+        </div>
+
+        <!-- Tab content -->
+        <div class="p-2 w-full">
+            <div id="Encomendas" class="tabcontent">
+                <h3 class="text-lg font-medium">Minhas Encomendas</h3>
+                <div class="table-responsive mt-3">
+                    <table class="table">
+                        <thead class="bg-blue-700 text-alabaster-100 text-sm font-light">
+                            <tr>
+                                <th class="py-1 px-3">Remover</th>
+                                <th class="py-1 px-3">Produto</th>
+                                <th class="py-1 px-3">Descrição</th>
+                                <th class="py-1 px-3">Preço</th>
+                                <th class="py-1 px-3">Quantidade</th>
+                                <th class="py-1 px-3">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class=" text-alabaster-900 text-sm font-light">
+                            <tr class="odd:bg-white even:bg-slate-50">
+                                <td class="py-1 px-3">
+                                    <button
+                                        class="p-1 w-10 hover:text-red-700 text-alabaster-700 items-center justify-center">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                </td>
+                                <td class="py-1 px-3">
+
+                                </td>
+                                <td class="py-1 px-3">1961</td>
+                                <td class="py-1 px-3">The Sliding Mr</td>
+                                <td class="py-1 px-3">Malcolm Lockyer</td>
+                                <td class="py-1 px-3">1961</td>
+                            </tr>
+                            <tr class="odd:bg-white even:bg-slate-50">
+                                <td class="py-1 px-3">
+                                    <button
+                                        class="p-1 w-10 hover:text-red-700 text-alabaster-700 items-center justify-center">
+                                        <i class="bi bi-trash3"></i>
+                                    </button>
+                                </td>
+                                <td class="py-1 px-3">
+
+                                </td>
+                                <td class="py-1 px-3">1961</td>
+                                <td class="py-1 px-3">The Sliding Mr</td>
+                                <td class="py-1 px-3">Malcolm Lockyer</td>
+                                <td class="py-1 px-3">1961</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+
+            <div id="Endereco" class="tabcontent fle">
+                <div class="flex max-[1024px]:flex-col gap-3">
+                    <div class="w-full">
+                        <h3 class="text-lg font-medium">Endereço 1</h3>
+                        <div class="flex flex-col w-full justify-between bg-gradient-to-l mt-4 px-4  h-fit">
+                            <ul class="flex flex-col gap-5  text-sm">
+                                <li class=" ">
+                                    <span>Telefones</span>
+                                    <ul>
+                                        <a class="text-sm text-gray-300">944 145 409 / 934 180 403</a>
+                                    </ul>
+                                </li>
+
+                                <li class=" ">
+                                    <span>E-mail</span>
+                                    <ul>
+                                        <a class="text-sm text-gray-300">
+                                            Geral.ndca@gmail.com
+                                        </a>
+                                    </ul>
+                                </li>
+
+                                <li class=" ">
+                                    <span>Endereço de envio</span>
+                                    <ul>
+                                        <a class="text-sm text-gray-300">
+                                            Kapolo 2 por de trás da Utanga</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button
+                            onclick="document.getElementById('id01').style.display='block'"
+                                class="flex items-center max-w-[8rem] transition-all  hover:brightness-90 w-full self-center mt-6 justify-center text-sm text-white rounded border-0 bg-green-600 p-2">Editar</button>
+
+
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <h3 class="text-lg font-medium">Endereço 2</h3>
+                        <div class="flex flex-col w-full justify-between bg-gradient-to-l mt-4 px-4  h-fit">
+                            <ul class="flex flex-col gap-5  text-sm">
+                                <li class=" ">
+                                    <span>Telefones</span>
+                                    <ul>
+                                        <a class="text-sm text-gray-300">944 145 409 / 934 180 403</a>
+                                    </ul>
+                                </li>
+
+                                <li class=" ">
+                                    <span>E-mail</span>
+                                    <ul>
+                                        <a class="text-sm text-gray-300">
+                                            Geral.ndca@gmail.com
+                                        </a>
+                                    </ul>
+                                </li>
+
+                                <li class=" ">
+                                    <span>Endereço de envio</span>
+                                    <ul>
+                                        <a class="text-sm text-gray-300">
+                                            Kapolo 2 por de trás da Utanga</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button
+                                class="flex items-center max-w-[8rem] mt-6 transition-all hover:brightness-90 w-full self-center justify-center text-sm text-white rounded border-0 bg-blue-700 p-2">Editar</button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="Conta" class="tabcontent">
+                <h3 class="text-lg font-medium">Detalhes da Conta</h3>
+
+
+                <form class="w-full  font-extralight flex flex-col gap-3   group  mt-3 ">
+                    <div class="flex max-[1024px]:flex-col gap-3">
+                        <div class="w-full flex flex-col gap-3">
+                            <div class="w-full">
+                                <label for="" class="text-sm">Nome</label>
+                                <input
+                                    class=" w-full caret-green-700 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                                    type="text" name="" id="" placeholder="Nome" />
+                            </div>
+                            <div class="w-full">
+                                <label for="" class="text-sm">Usuário</label>
+                                <input
+                                    class=" w-full caret-green-700 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                                    type="text" name="" id="" placeholder="Usuário" />
+                            </div>
+                        </div>
+
+                        <div class="w-full flex flex-col gap-3">
+                            <div class="w-full">
+                                <label for="" class="text-sm">E-mail</label>
+                                <input
+                                    class=" w-full caret-green-700 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                                    type="text" name="" id="" placeholder="E-mail" />
+                            </div>
+                            <div class="w-full">
+                                <label for="" class="text-sm">Telefone</label>
+                                <input
+                                    class=" w-full caret-green-700 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                                    type="text" name="" id="" placeholder="exemplo@ndca.com" />
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="flex items-center max-w-[10rem] transition-all hover:brightness-90 w-full self-center mt-2 justify-center text-sm text-white rounded border-0 bg-blue-700 p-2">Entrar</button>
+                </form>
+
+                <h3 class="text-lg font-medium mt-10">Mudar Palavra-Passe</h3>
+                <form class="w-full  font-extralight flex flex-col gap-3   group  mt-3 ">
+                    <div class="flex max-[1024px]:flex-col gap-3">
+                        <div class="w-full flex flex-col gap-3">
+                            <div class="w-full">
+                                <label for="" class="text-sm">E-mail</label>
+                                <input
+                                    class=" w-full caret-green-700 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                                    type="text" name="" id="" placeholder="exemplo@ndca.com" />
+                            </div>
+                            <div class="w-full">
+                                <label for="" class="text-sm">Actual Palavra-passe</label>
+                                <input
+                                    class=" w-full caret-green-700 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                                    type="text" name="" id="" placeholder="Actual Palavra-passe" />
+                            </div>
+                        </div>
+
+                        <div class="w-full flex flex-col gap-3">
+                            <div class="w-full">
+                                <label for="" class="text-sm">Nova Palavra-passe</label>
+                                <input
+                                    class=" w-full caret-green-700 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                                    type="text" name="" id="" placeholder="Nova Palavra-passe" />
+                            </div>
+                            <div class="w-full">
+                                <label for="" class="text-sm">Confirmar Palavra-Passe</label>
+                                <input
+                                    class=" w-full caret-green-700 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                                    type="text" name="" id="" placeholder="Confirmar Palavra-Passe" />
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="flex items-center max-w-[10rem] transition-all hover:brightness-90 w-full self-center mt-2 justify-center text-sm text-white rounded border-0 bg-green-600 p-2">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+
+
+<div id="id01" class="modal">
+    <div class="modal-content">
+        <div class="flex flex-col gap-3 w-[400px] max-[900px]:w-full max-[900px]:px-8">
+            <button onclick="document.getElementById('id01').style.display='none'"
+                class="self-end p-2 w-10 h-10 rounded-full closes ">&times;</button>
+
+            <form action="/action_page.php" class="bg-white p-3 rounded">
+                <p class="text-xl self-center">Endereço 1</p>
+                <div class="w-full  font-extralight flex flex-col gap-3   group  mt-3 ">
+                    <div class="w-ful">
+                        <label for="" class="text-sm">Telefone</label>
+                        <input
+                            class=" w-full ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                            type="text" name="" id="" placeholder="Telefone" />
+                    </div>
+
+                    <div class="w-ful">
+                        <label for="" class="text-sm">E-mail</label>
+                        <input
+                            class=" w-full ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"
+                            type="text" name="" id="" placeholder="E-amil" />
+                    </div>
+                    <div class="w-full flex flex-col gap-3  max-[900px]:w-full">
+                        <h1 class="text-sm">Endereço de envio</h1>
+                        <textarea
+                            class="w-full h-full  max-[900px]:h-32 ring-green-500/40 group  outline-none focus:ring-2 p-2 rounded-sm border-[0.0599rem] bg-white border-alabaster-700  placeholder:font-extralight placeholder:text-sm placeholder:text-alabaster-700/70  outline-0 bg-transparent"  type="text" name="" id="" placeholder="Endereço de envio"></textarea>
+                    </div>
+                    <button
+                        class="flex items-center transition-all hover:brightness-90 w-full self-end mt-2 justify-center text-sm text-white rounded border-0 bg-green-700 p-2">Entrar</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
