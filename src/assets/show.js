@@ -8,60 +8,19 @@ function load() {
     let ADsearchButton = document.getElementById("search")
     let ADsearchPortal = document.getElementById("ADsearchPortal")
 
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on the button, open the modal
-    if (btn) {
-        btn.addEventListener("click", function () {
-            modal.style.display = "block";
-            console.log("nrlo");
-        })
-    }
-    
-    
-    // When the user clicks on <span> (x), close the modal
-    if (span) {
-        span.addEventListener("click", function () {
-            modal.style.display = "none";
-            console.log("nrlo");
-        })
-    }
-
-    if (AsiderButton) {
-        AsiderButton.addEventListener('click', function () {
-
-            Asider.classList = 'absolute inset-0 bg-black/50 z-50 transition-all block min-[1000px]:hidden'
-        })
-    }
-
-    if (AsiderButtonClose) {
-        AsiderButtonClose.addEventListener('click', function () {
-
-            Asider.classList = 'absolute inset-0 bg-black/50 z-50 transition-all min-[1000px]:hidden hidden'
-        })
-    }
-
-    if (ADsearchButton) {
-        ADsearchButton.addEventListener('keyup', event => {
-            console.log(event);
-            ADsearchPortal.classList.remove("ad-hidden")
-
-        })
-
-        ADsearchButton.addEventListener('focusout', event => {
-            console.log(event);
-            ADsearchPortal.classList.add("ad-hidden")
-
-        })
-    }
-
 }
+
+function ToggleOpenAside() {
+    document.getElementById("Asider").classList.remove("hidden")
+    document.getElementById("Asider").classList.add("opacity-100 transition")
+
+} 
+
+function ToggleCloseAside() {
+    document.getElementById("Asider").classList.add("hidden")
+}
+
+
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");

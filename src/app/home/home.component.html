@@ -29,24 +29,28 @@
       </div>
       <div class="flex items-center gap-7">
 
-      
-      <div class="flex gap-3 max-[1024px]:text-sm max-[900px]:hidden">
-        <a href="#" class="hover:text-blue-500 transition-all">Login</a>
-        <a href="#" class="hover:text-blue-500 transition-all">Conta</a>
-      </div>
-      <div class="relative inline-block text-left">
-        <div class="flex items-center gap-3">
-          <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white" src="https://github.com/manuelfreitasc.png" alt="wqwe"/>
-          <button onclick="myFunction()" type="button" class="dropbtn inline-flex w-full justify-center gap-x-1.5 rounded-md 
-           px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true">
-           Perfil
-            <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-              <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-            </svg>
-          </button>
+
+        <div class="flex gap-3 max-[1024px]:text-sm max-[900px]:hidden">
+          <a href="#" class="hover:text-blue-500 transition-all">Login</a>
+          <a href="#" class="hover:text-blue-500 transition-all">Conta</a>
         </div>
-      
-        <!--
+        <div class="relative inline-block text-left">
+          <div class="flex items-center gap-3">
+            <img class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+              src="https://github.com/manuelfreitasc.png" alt="wqwe" />
+            <button onclick="myFunction()" type="button" class="dropbtn inline-flex w-full justify-center gap-x-1.5 rounded-md 
+           px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+              id="menu-button" aria-expanded="true" aria-haspopup="true">
+              Perfil
+              <svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+
+          <!--
           Dropdown menu, show/hide based on menu state.
       
           Entering: "transition ease-out duration-100"
@@ -56,30 +60,40 @@
             From: "transform opacity-100 scale-100"
             To: "transform opacity-0 scale-95"
         -->
-        <div id="myDropdown" class="dropdown-content hidden absolute right-0 z-50 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-          <div class="py-1" role="none">
-            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a>
-          </div>
-          <div class="py-1" role="none">
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Archive</a>
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Move</a>
-          </div>
-          <div class="py-1" role="none">
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Share</a>
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Add to favorites</a>
-          </div>
-          <div class="py-1" role="none">
-            <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-6">Delete</a>
+          <div id="myDropdown"
+            class="dropdown-content hidden absolute right-0 z-50 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+            role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+            <div class="py-1" role="none">
+              <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-0">Edit</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-1">Duplicate</a>
+            </div>
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-2">Archive</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-3">Move</a>
+            </div>
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-4">Share</a>
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-5">Add to favorites</a>
+            </div>
+            <div class="py-1" role="none">
+              <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1"
+                id="menu-item-6">Delete</a>
+            </div>
           </div>
         </div>
+
+        <button class="min-[900px]:hidden m-2 w-12 py-1 focus:border border-gray-90 hover:bg-gray-300"
+          id="AsiderButton" onclick="ToggleOpenAside()">
+          <i id="AsiderButtonICon" class="bi  bi-list text-black text-2xl  font-extrabold"></i>
+        </button>
       </div>
-      
-      <button class="min-[900px]:hidden m-2 w-12 py-1 focus:border border-gray-90 hover:bg-gray-300"  id="AsiderButton">
-        <i id="AsiderButtonICon" class="bi  bi-list text-black text-2xl  font-extrabold"></i>
-      </button>
-    </div>
     </div>
   </nav>
   <div class="bg-gradient-to-r from-blue-500 via-blue-700 to-blue-900">
@@ -95,15 +109,17 @@
       </div>
 
       <div class="flex w-full min-[900px]:ml-80 items-end gap-3">
-       <!--  <form class="w-full flex items-end relative justify-end">
+        <!--  <form class="w-full flex items-end relative justify-end">
           <i class="bi bi-search absolute bottom-1 right-3 text-alabaster-600/50"></i>
           <input
             class="w-4/5 max-[900px]:w-full rounded-sm border-[0.0599rem] border-alabaster-600/40 py-1 pl-3 pr-9 outline-0 bg-transparent"
             type="text" name="" id="" placeholder="O que precuras ?" />
         </form> -->
+        <!--      <img class=" w-10 h-10 rounded-full"
+                                          src="https://ecommerce-api-4bxi.onrender.com/api/v1/product-preview/tmp/products/Apple%20iPhone%2014-1690631295381.jpeg"
+                                          alt="iphone"> -->
 
-
-          <button class="relative  w-full 
+        <!--           <button class="relative  w-full 
           ">
              <div class=" max-[900px]:w-full relative ">
                   <input type="text" name="" id="search" placeholder="Pesquesar produto"
@@ -114,9 +130,7 @@
               <div id="ADsearchPortal" class="absolute ad-hidden inset-0 top-[34px] transition-all rounded-b z-40  border-[1px] border-alabaster-600  overflow-hidden  bg-alabaster-100 h-fit">
                  <ul class="w-full py-1">
                       <a href="#" class="w-full flex items-start gap-3  px-3 py-1 transition-all group  hover:bg-blue-700  text-sm font-extraaght">
-                     <!--      <img class=" w-10 h-10 rounded-full"
-                                          src="https://ecommerce-api-4bxi.onrender.com/api/v1/product-preview/tmp/products/Apple%20iPhone%2014-1690631295381.jpeg"
-                                          alt="iphone"> -->
+                
                       <div class="flex flex-col items-start">
                        <span class="text-sm font-bold text-alabaster-700 group-hover:text-alabaster-200">Arroz</span>
                        <p class="text-xs font-extralight text-alabaster-700 group-hover:text-alabaster-400">Lorem ipsum dolor sit amet consectetur</p>
@@ -130,20 +144,59 @@
                           </a>
                   </ul>
               </div>
-          </button>
+          </button> -->
 
 
+        <div
+          class="group relative w-4/5 max-[900px]:w-full py-1 h-full rounded-sm border-[0.0599rem] border-alabaster-600/40   outline-0 bg-transparent accordion-section "
+          tabindex="1">
+          <div
+            class="  flex justify-between   items-center text-black transition ease duration-500 cursor-pointer">
+            <div
+              class="text-sm font-light px-3 lowercase transition ease duration-500  text-alabaster-600/60 max-[1024px]:mr-3">
+              O que precuras?
+              <i class="bi bi-search absolute bottom-1 right-3 text-alabaster-600/50"></i>
+
+            </div>
+
+          </div>
+          <div class="group-focus-within:opacity-100 absolute  inset-0 opacity-0 z-20 h-fit bg-white  shadow-xl shadow-slate-700 rounded-sm overflow-hidden ease duration-500">
+           
+            <div
+            class="relative">
+            <input   class="w-full py-2 px-3 pr-5  rounded-sm border-[0.0599rem] placeholder:font-extralight placeholder:text-sm  border-alabaster-600/40 "
+            type="text" name="" id="" placeholder="O que precuras ?" />
+            <i class="bi bi-search absolute top-3 right-3 text-alabaster-900/70"></i>
+
+          </div>
+           <ul class="w-full flex flex-col divide-y-2 divide-alabaster-600/20">
+            <a href="#" class="w-full  transition ease duration-100 hover:bg-alabaster-600/30 hover:text-black text-black/70 flex gap-4 px-3 py-3  bg-alabaster-300">
+              <img class="h-10  w-10" alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+           
+              <p class="text-sm lowercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto quasi nemo cum</p>
+            </a>
+            <a href="#" class="w-full  transition ease duration-100 hover:bg-alabaster-600/30 hover:text-black text-black/70 flex gap-4 px-3 py-3  bg-alabaster-300">
+              <img class="h-10  w-10" alt="100%x280"
+              src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d" />
+           
+              <p class="text-sm lowercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem architecto quasi nemo cum</p>
+            </a>
+           </ul>
+          </div>
+        </div>
 
 
-
-        <button class="flex items-center transition-all hover:brightness-90 text-white  max-[900px]:hidden rounded border-0 bg-green-700">
+        <button
+          class="flex items-center transition-all hover:brightness-90 text-white  max-[900px]:hidden rounded border-0 bg-green-700">
           <span class="py-1 px-3">Carrinho</span>
           <span class="py-1 px-3 bg-green-500/30"> 1 </span>
           <span class="py-1 px-3 bg-green-600 rounded-r-md">
             <i class="bi bi-cart3"></i>
           </span>
         </button>
-        <button class="flex items-center transition-all hover:brightness-90 text-white rounded border-0  min-[900px]:hidden bg-green-700">
+        <button
+          class="flex items-center transition-all hover:brightness-90 text-white rounded border-0  min-[900px]:hidden bg-green-700">
           <span class="py-1 px-3 bg-green-500/30"> 1 </span>
           <span class="py-1 px-3 bg-green-600 rounded-r-md">
             <i class="bi bi-cart3"></i>
@@ -645,8 +698,9 @@
   </div>
 </footer>
 
-<aside id="Asider"  class="absolute  transition-opacity inset-0 bg-black/50 z-50  hidden min-[1024px]:hidden  opacity-0">
-  <button id="AsiderButtonClose" class="p-3 h-4 w-4 rounded-full float-right flex items-center justify-center m-4  bg-white text-alabaster-900 font-extrabold" >X</button>
+<aside id="Asider" class="absolute  transition opacity-0 ease duration-500 inset-0 bg-black/50 z-50  hidden min-[1024px]:hidden">
+  <button id="AsiderButtonClose" onclick="ToggleCloseAside()"
+    class="p-3 h-4 w-4 rounded-full float-right flex items-center justify-center m-4  bg-white text-alabaster-900 font-extrabold">X</button>
   <div class="w-9/12  bg-white h-full">
     <div class="flex pr-3 shadow-md items-center justify-between gap-3">
       <img class="w-32" src="https://ndca-online-demo.netlify.app/assets/images/logondca/logotiporectang.png" alt="" />
@@ -677,7 +731,8 @@
       <i class="bi bi-chevron-down text-white/40  self-end"></i>
     </div>
     <div class="w-full">
-      <a class="w-full  px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+      <a
+        class="w-full  px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-laptop group-hover:text-white text-2xl"></i>
         <span class="flex items-center group-hover:text-white text-xs font-semibold">
           Acessórios e Informática
@@ -686,7 +741,8 @@
               akmmakfkac
             </ul> -->
       </a>
-      <a class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+      <a
+        class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-train-lightrail-front group-hover:text-white text-2xl"></i>
         <span class="flex items-center group-hover:text-white text-xs font-semibold">
           Perfume
@@ -696,7 +752,8 @@
             </ul> -->
       </a>
 
-      <a class="w-full  px-3 group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+      <a
+        class="w-full  px-3 group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-phone group-hover:text-white text-2xl"></i>
         <span class="flex items-center group-hover:text-white text-xs font-semibold">
           Telefones
@@ -706,7 +763,8 @@
             </ul> -->
       </a>
 
-      <a class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+      <a
+        class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-pc-display group-hover:text-white text-2xl"></i>
         <span class="flex items-center group-hover:text-white text-xs font-semibold">
           Computadores
@@ -716,7 +774,8 @@
             </ul> -->
       </a>
 
-      <a class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+      <a
+        class="w-full px-3  group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-palette2 group-hover:text-white text-2xl"></i>
         <span class="flex items-center group-hover:text-white text-xs font-semibold">
           Calçados
@@ -725,7 +784,8 @@
               akmmakfkac
             </ul> -->
       </a>
-      <a class="w-full  px-3 group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
+      <a
+        class="w-full  px-3 group transition-all hover:bg-blue-700 cursor-pointer flex items-center gap-3 border-b border-white/30 p-2">
         <i class="bi bi-music-note-beamed group-hover:text-white text-2xl"></i>
         <span class="flex items-center group-hover:text-white text-xs font-semibold">
           Imagem e Som

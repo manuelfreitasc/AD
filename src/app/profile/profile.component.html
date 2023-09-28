@@ -100,7 +100,7 @@
 
 </header>
 <main>
-    <section class="m-auto max-w-[1170px] flex max-[1024px]:px-8  max-[900px]:flex-col py-10 relative  gap-2">
+    <section class="m-auto max-w-[1170px] flex max-[1024px]:px-8  max-[900px]:flex-col py-10 relative  gap-7">
         <div class="tab min-[900px]:w-[300px]  py-3 max-[900px]:w-full ">
             <div class="w-full flex flex-col gap-2 items-center justify-center">
                 <img class="inline-block  h-24 w-24 rounded-full  ring-4 ring-white shadow-xl"
@@ -118,7 +118,7 @@
 
             </div>
             <div class="flex flex-col w-full divide-y-8-y-">
-                <div class="w-full flex  max-[900px]:flex-row">
+                <div class="w-full flex flex-col  max-[900px]:flex-row">
                     <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'Encomendas')">Encomendas</button>
                     <button class="tablinks" onclick="openCity(event, 'Endereco')">Endereço</button>
                     <button class="tablinks" onclick="openCity(event, 'Conta')">Conta</button>
@@ -133,52 +133,103 @@
         <!-- Tab content -->
         <div class="p-2 w-full">
             <div id="Encomendas" class="tabcontent">
-                <h3 class="text-lg font-medium">Minhas Encomendas</h3>
-                <div class="table-responsive mt-3">
-                    <table class="table">
-                        <thead class="bg-blue-700 text-alabaster-100 text-sm font-light">
-                            <tr>
-                                <th class="py-1 px-3">Remover</th>
-                                <th class="py-1 px-3">Produto</th>
-                                <th class="py-1 px-3">Descrição</th>
-                                <th class="py-1 px-3">Preço</th>
-                                <th class="py-1 px-3">Quantidade</th>
-                                <th class="py-1 px-3">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody class=" text-alabaster-900 text-sm font-light">
-                            <tr class="odd:bg-white even:bg-slate-50">
-                                <td class="py-1 px-3">
-                                    <button
-                                        class="p-1 w-10 hover:text-red-700 text-alabaster-700 items-center justify-center">
-                                        <i class="bi bi-trash3"></i>
-                                    </button>
-                                </td>
-                                <td class="py-1 px-3">
-
-                                </td>
-                                <td class="py-1 px-3">1961</td>
-                                <td class="py-1 px-3">The Sliding Mr</td>
-                                <td class="py-1 px-3">Malcolm Lockyer</td>
-                                <td class="py-1 px-3">1961</td>
-                            </tr>
-                            <tr class="odd:bg-white even:bg-slate-50">
-                                <td class="py-1 px-3">
-                                    <button
-                                        class="p-1 w-10 hover:text-red-700 text-alabaster-700 items-center justify-center">
-                                        <i class="bi bi-trash3"></i>
-                                    </button>
-                                </td>
-                                <td class="py-1 px-3">
-
-                                </td>
-                                <td class="py-1 px-3">1961</td>
-                                <td class="py-1 px-3">The Sliding Mr</td>
-                                <td class="py-1 px-3">Malcolm Lockyer</td>
-                                <td class="py-1 px-3">1961</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div>
+                    <h3 class="text-lg font-medium">Minhas Encomendas</h3>
+                    <div class="table-responsive mt-3">
+                        <table class="table">
+                            <thead class="bg-blue-700 text-alabaster-100 text-sm font-light">
+                                <tr>
+                                    <th class="py-1 px-3">Remover</th>
+                                    <th class="py-1 px-3">Produto</th>
+                                    <th class="py-1 px-3">Descrição</th>
+                                    <th class="py-1 px-3">Preço</th>
+                                    <th class="py-1 px-3">Quantidade</th>
+                                    <th class="py-1 px-3">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class=" text-alabaster-900 text-sm font-light">
+                                <tr class="odd:bg-white even:bg-slate-50">
+                                    <td class="py-1 px-3">
+                                        <button
+                                            class="p-1 w-10 hover:text-red-700 text-alabaster-700 items-center justify-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                    <td class="py-1 px-3">
+    
+                                    </td>
+                                    <td class="py-1 px-3">1961</td>
+                                    <td class="py-1 px-3">The Sliding Mr</td>
+                                    <td class="py-1 px-3">Malcolm Lockyer</td>
+                                    <td class="py-1 px-3">1961</td>
+                                </tr>
+                                <tr class="odd:bg-white even:bg-slate-50">
+                                    <td class="py-1 px-3">
+                                        <button
+                                            class="p-1 w-10 hover:text-red-700 text-alabaster-700 items-center justify-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                    <td class="py-1 px-3">
+    
+                                    </td>
+                                    <td class="py-1 px-3">1961</td>
+                                    <td class="py-1 px-3">The Sliding Mr</td>
+                                    <td class="py-1 px-3">Malcolm Lockyer</td>
+                                    <td class="py-1 px-3">1961</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>  
+                </div>
+                <div>
+                    <h3 class="text-lg font-medium">Hestórico Encomenda</h3>
+                    <div class="table-responsive mt-3">
+                        <table class="table">
+                            <thead class="bg-blue-700 text-alabaster-100 text-sm font-light">
+                                <tr>
+                                    <th class="py-1 px-3">Remover</th>
+                                    <th class="py-1 px-3">Produto</th>
+                                    <th class="py-1 px-3">Descrição</th>
+                                    <th class="py-1 px-3">Preço</th>
+                                    <th class="py-1 px-3">Quantidade</th>
+                                    <th class="py-1 px-3">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class=" text-alabaster-900 text-sm font-light">
+                                <tr class="odd:bg-white even:bg-slate-50">
+                                    <td class="py-1 px-3">
+                                        <button
+                                            class="p-1 w-10 hover:text-red-700 text-alabaster-700 items-center justify-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                    <td class="py-1 px-3">
+    
+                                    </td>
+                                    <td class="py-1 px-3">1961</td>
+                                    <td class="py-1 px-3">The Sliding Mr</td>
+                                    <td class="py-1 px-3">Malcolm Lockyer</td>
+                                    <td class="py-1 px-3">1961</td>
+                                </tr>
+                                <tr class="odd:bg-white even:bg-slate-50">
+                                    <td class="py-1 px-3">
+                                        <button
+                                            class="p-1 w-10 hover:text-red-700 text-alabaster-700 items-center justify-center">
+                                            <i class="bi bi-trash3"></i>
+                                        </button>
+                                    </td>
+                                    <td class="py-1 px-3">
+    
+                                    </td>
+                                    <td class="py-1 px-3">1961</td>
+                                    <td class="py-1 px-3">The Sliding Mr</td>
+                                    <td class="py-1 px-3">Malcolm Lockyer</td>
+                                    <td class="py-1 px-3">1961</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>  
                 </div>
             </div>
 
@@ -297,7 +348,7 @@
                         </div>
                     </div>
                     <button
-                        class="flex items-center max-w-[10rem] transition-all hover:brightness-90 w-full self-center mt-2 justify-center text-sm text-white rounded border-0 bg-blue-700 p-2">Entrar</button>
+                        class="flex items-center max-w-[10rem] transition-all hover:brightness-90 w-full self-end mt-2 justify-center text-sm text-white rounded border-0 bg-blue-700 p-2">Entrar</button>
                 </form>
 
                 <h3 class="text-lg font-medium mt-10">Mudar Palavra-Passe</h3>
@@ -334,7 +385,7 @@
                         </div>
                     </div>
                     <button
-                        class="flex items-center max-w-[10rem] transition-all hover:brightness-90 w-full self-center mt-2 justify-center text-sm text-white rounded border-0 bg-green-600 p-2">Salvar</button>
+                        class="flex items-center max-w-[10rem] transition-all hover:brightness-90 w-full self-end mt-2 justify-center text-sm text-white rounded border-0 bg-green-600 p-2">Salvar</button>
                 </form>
             </div>
         </div>
