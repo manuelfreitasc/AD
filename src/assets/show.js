@@ -12,7 +12,7 @@ function load() {
 
 function ToggleOpenAside() {
     document.getElementById("Asider").classList.remove("hidden")
-    document.getElementById("Asider").classList.add("opacity-100 transition")
+    document.getElementById("Asider").classList.add("opacity-100")
 
 } 
 
